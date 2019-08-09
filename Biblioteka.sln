@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{C06F7DCD-DD21-4EA8-A362-4B3CA44FCC16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{74718051-A64B-4375-B212-A7E56FEB3B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klijent", "Klijent\Klijent.csproj", "{0EE9165C-D0E6-49DB-8A85-E6FAA549EA30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C06F7DCD-DD21-4EA8-A362-4B3CA44FCC16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06F7DCD-DD21-4EA8-A362-4B3CA44FCC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06F7DCD-DD21-4EA8-A362-4B3CA44FCC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06F7DCD-DD21-4EA8-A362-4B3CA44FCC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74718051-A64B-4375-B212-A7E56FEB3B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74718051-A64B-4375-B212-A7E56FEB3B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74718051-A64B-4375-B212-A7E56FEB3B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74718051-A64B-4375-B212-A7E56FEB3B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE9165C-D0E6-49DB-8A85-E6FAA549EA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE9165C-D0E6-49DB-8A85-E6FAA549EA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE9165C-D0E6-49DB-8A85-E6FAA549EA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE9165C-D0E6-49DB-8A85-E6FAA549EA30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C3F4B1F-F74D-433B-AC2A-420D98F91DD9}
+	EndGlobalSection
+EndGlobal

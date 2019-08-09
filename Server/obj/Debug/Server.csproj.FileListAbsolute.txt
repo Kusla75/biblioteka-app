@@ -1,0 +1,24 @@
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.exe.config
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.exe
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.pdb
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\bin\Debug\ClassLibrary.dll
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\bin\Debug\ClassLibrary.pdb
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.exe
+C:\Users\Nikola\Desktop\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.pdb
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csprojAssemblyReference.cache
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.exe
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.pdb
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.exe.config
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.exe
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\bin\Debug\Server.pdb
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\bin\Debug\ClassLibrary.dll
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\bin\Debug\ClassLibrary.pdb
+E:\2 Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.exe
+D:\Nikola\Projects\CMT project\Biblioteka\Server\obj\Debug\Server.pdb
+C:\Users\Nikola\Desktop\Biblioteka app\Server\obj\Debug\Server.exe
+C:\Users\Nikola\Desktop\Biblioteka app\Server\obj\Debug\Server.pdb

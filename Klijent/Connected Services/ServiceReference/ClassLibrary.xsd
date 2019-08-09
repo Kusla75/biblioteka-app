@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ClassLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ClassLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Izuzetak">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Razlog" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Izuzetak" nillable="true" type="tns:Izuzetak" />
+  <xs:complexType name="Clan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aktivan" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DatumRodjenja" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Jmbg" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="Prezime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Clan" nillable="true" type="tns:Clan" />
+  <xs:complexType name="Pisac">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DatumRodjenja" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Jmbg" type="xs:unsignedLong" />
+      <xs:element minOccurs="0" name="Prezime" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pisac" nillable="true" type="tns:Pisac" />
+  <xs:complexType name="Knjiga">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GodinaIzdavanja" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Naziv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pisac" nillable="true" type="tns:Pisac" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Knjiga" nillable="true" type="tns:Knjiga" />
+</xs:schema>

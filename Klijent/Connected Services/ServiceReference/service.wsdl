@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Servis" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ClassLibrary" />
+      <xsd:import />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServis_LogovanjeKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogovanjeKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServis_LogovanjeKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogovanjeKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjeKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjeKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKorisnika_IzuzetakFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/ClassLibrary" name="detail" element="q1:Izuzetak" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistovanjeClana_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistovanjeClana" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistovanjeClana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistovanjeClanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistovanjeClana_IzuzetakFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/ClassLibrary" name="detail" element="q2:Izuzetak" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjePisca_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjePisca" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjePisca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjePiscaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjePisca_IzuzetakFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/ClassLibrary" name="detail" element="q3:Izuzetak" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKnjige_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjeKnjige" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKnjige_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrovanjeKnjigeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_RegistrovanjeKnjige_IzuzetakFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/ClassLibrary" name="detail" element="q4:Izuzetak" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IznajmiKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:IznajmiKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IznajmiKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IznajmiKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_VratiKnjigu_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKnjigu" />
+  </wsdl:message>
+  <wsdl:message name="IServis_VratiKnjigu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKnjiguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IznajmljeneKnjigeClana_InputMessage">
+    <wsdl:part name="parameters" element="tns:IznajmljeneKnjigeClana" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IznajmljeneKnjigeClana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IznajmljeneKnjigeClanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IzmenaVrednostiTabele_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzmenaVrednostiTabele" />
+  </wsdl:message>
+  <wsdl:message name="IServis_IzmenaVrednostiTabele_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzmenaVrednostiTabeleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_PretragaBazePodataka_InputMessage">
+    <wsdl:part name="parameters" element="tns:PretragaBazePodataka" />
+  </wsdl:message>
+  <wsdl:message name="IServis_PretragaBazePodataka_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PretragaBazePodatakaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaClana_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaClana" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaClana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaClanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaKnjige_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaKnjige" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaKnjige_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaKnjigeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaPisca_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaPisca" />
+  </wsdl:message>
+  <wsdl:message name="IServis_DetaljnaPretragaPisca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetaljnaPretragaPiscaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SviClanovi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SviClanovi" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SviClanovi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SviClanoviResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SviPisci_InputMessage">
+    <wsdl:part name="parameters" element="tns:SviPisci" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SviPisci_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SviPisciResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SveKnjige_InputMessage">
+    <wsdl:part name="parameters" element="tns:SveKnjige" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SveKnjige_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SveKnjigeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SvaIznajmljivanja_InputMessage">
+    <wsdl:part name="parameters" element="tns:SvaIznajmljivanja" />
+  </wsdl:message>
+  <wsdl:message name="IServis_SvaIznajmljivanja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SvaIznajmljivanjaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServis">
+    <wsdl:operation name="LogovanjeKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/LogovanjeKorisnika" message="tns:IServis_LogovanjeKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/LogovanjeKorisnikaResponse" message="tns:IServis_LogovanjeKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjeKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKorisnika" message="tns:IServis_RegistrovanjeKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKorisnikaResponse" message="tns:IServis_RegistrovanjeKorisnika_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKorisnikaIzuzetakFault" name="IzuzetakFault" message="tns:IServis_RegistrovanjeKorisnika_IzuzetakFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistovanjeClana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/RegistovanjeClana" message="tns:IServis_RegistovanjeClana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/RegistovanjeClanaResponse" message="tns:IServis_RegistovanjeClana_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServis/RegistovanjeClanaIzuzetakFault" name="IzuzetakFault" message="tns:IServis_RegistovanjeClana_IzuzetakFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjePisca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/RegistrovanjePisca" message="tns:IServis_RegistrovanjePisca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/RegistrovanjePiscaResponse" message="tns:IServis_RegistrovanjePisca_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServis/RegistrovanjePiscaIzuzetakFault" name="IzuzetakFault" message="tns:IServis_RegistrovanjePisca_IzuzetakFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjeKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKnjige" message="tns:IServis_RegistrovanjeKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKnjigeResponse" message="tns:IServis_RegistrovanjeKnjige_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IServis/RegistrovanjeKnjigeIzuzetakFault" name="IzuzetakFault" message="tns:IServis_RegistrovanjeKnjige_IzuzetakFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IznajmiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/IznajmiKnjigu" message="tns:IServis_IznajmiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/IznajmiKnjiguResponse" message="tns:IServis_IznajmiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiKnjigu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/VratiKnjigu" message="tns:IServis_VratiKnjigu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/VratiKnjiguResponse" message="tns:IServis_VratiKnjigu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IznajmljeneKnjigeClana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/IznajmljeneKnjigeClana" message="tns:IServis_IznajmljeneKnjigeClana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/IznajmljeneKnjigeClanaResponse" message="tns:IServis_IznajmljeneKnjigeClana_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzmenaVrednostiTabele">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/IzmenaVrednostiTabele" message="tns:IServis_IzmenaVrednostiTabele_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/IzmenaVrednostiTabeleResponse" message="tns:IServis_IzmenaVrednostiTabele_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PretragaBazePodataka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/PretragaBazePodataka" message="tns:IServis_PretragaBazePodataka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/PretragaBazePodatakaResponse" message="tns:IServis_PretragaBazePodataka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaClana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaClana" message="tns:IServis_DetaljnaPretragaClana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaClanaResponse" message="tns:IServis_DetaljnaPretragaClana_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaKnjige" message="tns:IServis_DetaljnaPretragaKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaKnjigeResponse" message="tns:IServis_DetaljnaPretragaKnjige_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaPisca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaPisca" message="tns:IServis_DetaljnaPretragaPisca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/DetaljnaPretragaPiscaResponse" message="tns:IServis_DetaljnaPretragaPisca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SviClanovi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/SviClanovi" message="tns:IServis_SviClanovi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/SviClanoviResponse" message="tns:IServis_SviClanovi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SviPisci">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/SviPisci" message="tns:IServis_SviPisci_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/SviPisciResponse" message="tns:IServis_SviPisci_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SveKnjige">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/SveKnjige" message="tns:IServis_SveKnjige_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/SveKnjigeResponse" message="tns:IServis_SveKnjige_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SvaIznajmljivanja">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServis/SvaIznajmljivanja" message="tns:IServis_SvaIznajmljivanja_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServis/SvaIznajmljivanjaResponse" message="tns:IServis_SvaIznajmljivanja_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServis" type="tns:IServis">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LogovanjeKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServis/LogovanjeKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjeKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IServis/RegistrovanjeKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IzuzetakFault">
+        <soap:fault use="literal" name="IzuzetakFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistovanjeClana">
+      <soap:operation soapAction="http://tempuri.org/IServis/RegistovanjeClana" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IzuzetakFault">
+        <soap:fault use="literal" name="IzuzetakFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjePisca">
+      <soap:operation soapAction="http://tempuri.org/IServis/RegistrovanjePisca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IzuzetakFault">
+        <soap:fault use="literal" name="IzuzetakFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrovanjeKnjige">
+      <soap:operation soapAction="http://tempuri.org/IServis/RegistrovanjeKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IzuzetakFault">
+        <soap:fault use="literal" name="IzuzetakFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IznajmiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServis/IznajmiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiKnjigu">
+      <soap:operation soapAction="http://tempuri.org/IServis/VratiKnjigu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IznajmljeneKnjigeClana">
+      <soap:operation soapAction="http://tempuri.org/IServis/IznajmljeneKnjigeClana" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzmenaVrednostiTabele">
+      <soap:operation soapAction="http://tempuri.org/IServis/IzmenaVrednostiTabele" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PretragaBazePodataka">
+      <soap:operation soapAction="http://tempuri.org/IServis/PretragaBazePodataka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaClana">
+      <soap:operation soapAction="http://tempuri.org/IServis/DetaljnaPretragaClana" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaKnjige">
+      <soap:operation soapAction="http://tempuri.org/IServis/DetaljnaPretragaKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DetaljnaPretragaPisca">
+      <soap:operation soapAction="http://tempuri.org/IServis/DetaljnaPretragaPisca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SviClanovi">
+      <soap:operation soapAction="http://tempuri.org/IServis/SviClanovi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SviPisci">
+      <soap:operation soapAction="http://tempuri.org/IServis/SviPisci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SveKnjige">
+      <soap:operation soapAction="http://tempuri.org/IServis/SveKnjige" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SvaIznajmljivanja">
+      <soap:operation soapAction="http://tempuri.org/IServis/SvaIznajmljivanja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Servis">
+    <wsdl:port name="BasicHttpBinding_IServis" binding="tns:BasicHttpBinding_IServis">
+      <soap:address location="http://localhost:8000/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
